@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Http\Controllers\;
+ 
+use Illuminate\Http\Request;
+use DB;
+
+class prak9controller extends controller
+{
+    //menampilkan jumlah data: count()
+    public function QB_tugas1(){
+           $JRekProduk =DB::table('produks')->count();
+           $JRekProduk =DB::table('kategori')->count();
+
+
+    }
+

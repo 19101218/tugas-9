@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+ 
+use Illuminate\Http\Request;
+use DB;
+
+class prak9controller extends controller
+{
+    //menampilkan jumlah data: count()
+    public function QB_tugas1(){
+           $JRekProduk =DB::table('produks')->count();
+           $JRekProduk =DB::table('kategori')->count();
+
+return view('praktikum9.tugas1', [ 'JRekProduk'=>$JRekKategori'=>$JRekKategori] );
+    }
+    Public function QB_tugas2(){
+        $id_kat = 3;
+        $PData = DB::table('produks')->where('id_kat',$id_kat)->get();
+        $JRek = DB::table('produks')->where('id_kat' ,$id_kat)->count();
+
+return view ('praktikum9.tugas2', compact('pdata','JRek','id_kat') );
+
+    }
+}
+   

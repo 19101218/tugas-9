@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan view 02</title>
+</head>
+ <body>
+         <h2>jumlah data pada tabel produk</h2>
+
+         Jumlah data : {{ $JRekProduk }}
+
+         <h2> Jumlah Data Pada Tabel Kategori</h2>
+
+         Jumlah Data : {{ $JRekKategori }}
+
+   </body>
+ </html>
